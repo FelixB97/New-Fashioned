@@ -17,7 +17,7 @@ async function hentData(link) {
 function vis(cocktails) {
     console.log(cocktails);
     container.innerHTML = "";
-    cocktails.feed.entry.forEach(ret => {
+    cocktails.feed.entry.forEach(cocktails => {
         if (filter == "alle" || filter == cocktails.gsx$kategori.$t) {
             console.log('ret filter');
             const klon = temp.cloneNode(true).content;
