@@ -17,6 +17,7 @@ async function hentData(link) {
 function vis(cocktails) {
     console.log(cocktails);
     container.innerHTML = "";
+    let picNumber = 1;
     cocktails.feed.entry.forEach(cocktails => {
         if (filter == "alle" || filter == cocktails.gsx$kategori.$t) {
             console.log('ret filter');
@@ -24,8 +25,7 @@ function vis(cocktails) {
             klon.querySelector(".navn").textContent = cocktails.gsx$navn.$t;
 
             //            Ny billedereference til placeholder billede - skal ændres ved adgang til gsheets
-            let picNumber = 1;
-            klon.querySelector("img").src = `imgs/small/drink_${picNumber ++}.jpg`;
+            klon.querySelector("img").src = `imgs/small/drink_${picNumber++}.jpg`;
             //          Gammel billedereference
             //            klon.querySelector("img").src = "imgs/small/" + cocktails.gsx$billede.$t + "-sm.jpg";
             klon.querySelector(".kort").textContent = cocktails.gsx$kort.$t;
@@ -45,8 +45,7 @@ function visDetaljer(drink) {
     popup.querySelector(".oprindelse").textContent = drink.gsx$oprindelse.$t;
     popup.querySelector(".lang").textContent = drink.gsx$lang.$t;
     //            Ny billedereference til placeholder billede - skal ændres ved adgang til gsheets
-    let picNumber = 1;
-    klon.querySelector("img").src = `imgs/small/drink_${picNumber ++}.jpg`;
+    klon.querySelector("img").src = `imgs/small/drink_${picNumber}.jpg`;
     //          Gammel billedereference
     //    popup.querySelector("img").src = "imgs/large/" + drink.gsx$billede.$t + ".jpg";
 }
