@@ -30,7 +30,7 @@ function vis(cocktails) {
             //            klon.querySelector("img").src = "imgs/small/" + cocktails.gsx$billede.$t + "-sm.jpg";
             klon.querySelector(".kort").textContent = cocktails.gsx$kort.$t;
             klon.querySelector(".pris").textContent = "pris: " + cocktails.gsx$pris.$t + " kr. ,-";
-            klon.querySelector("#listContainer").addEventListener("click", () => visDetaljer(drink));
+            klon.querySelector("#listContainer").addEventListener("click", () => visDetaljer(cocktails));
             container.appendChild(klon);
         }
     })
