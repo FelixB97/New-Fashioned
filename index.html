@@ -9,21 +9,38 @@
 
 
 <body>
-    <header>
-        <div id="splash">
-            <div id="hammersegl"></div>
-            <h1>Bistro Babushka</h1>
-        </div>
-        <h1>Menu:</h1>
-        <div id="menu">
-            <button class="filter buttonClicked" data-type="alle">Alle</button>
-            <button class="filter" data-type="desserter">desserter</button>
-            <button class="filter" data-type="drikkevarer">drikkevarer</button>
-            <button class="filter" data-type="forretter">forretter</button>
-            <button class="filter" data-type="hovedretter">hovedretter</button>
-            <button class="filter" data-type="sideorders">sideorders</button>
-        </div>
-    </header>
+    <section class="landing-page-width">
+        <header>
+            <div id="splash">
+                <div id="hammersegl"></div>
+                <h1>Bistro Babushka</h1>
+            </div>
+            <h1>Menu:</h1>
+            <div id="menu">
+                <button class="filter buttonClicked" data-type="alle">Alle</button>
+                <button class="filter" data-type="desserter">desserter</button>
+                <button class="filter" data-type="drikkevarer">drikkevarer</button>
+                <button class="filter" data-type="forretter">forretter</button>
+                <button class="filter" data-type="hovedretter">hovedretter</button>
+                <button class="filter" data-type="sideorders">sideorders</button>
+            </div>
+        </header>
+
+
+        <section id="listSection"></section>
+
+
+        <template>
+            <article id="listContainer">
+                <div id="container">
+                    <img src="" alt="">
+                    <h2 class="navn"></h2>
+                    <p class="kort"></p>
+                    <p class="pris"></p>
+                </div>
+            </article>
+        </template>
+    </section>
 
     <section id="popup">
         <article id="contentArea">
@@ -40,19 +57,6 @@
         </article>
     </section>
 
-    <section id="listSection"></section>
-
-
-    <template>
-        <article id="listContainer">
-            <div id="container">
-                <img src="" alt="">
-                <h2 class="navn"></h2>
-                <p class="kort"></p>
-                <p class="pris"></p>
-            </div>
-        </article>
-    </template>
     <script src="javascript.js"></script>
     <footer>
         <div id="footer"></div>
