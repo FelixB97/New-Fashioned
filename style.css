@@ -17,15 +17,38 @@ html {
 img {
     /*    display: flex;*/
     max-width: 100%;
-    max-height: 300px;
     object-fit: contain;
+
+    border-radius: 25px;
 }
+
+
+#omos p {
+    padding: 0 0 50px 0;
+}
+
 
 #listSection {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+    align-items: center;
     max-width: 1700px;
     grid-gap: 20px;
+}
+
+#listContainer {
+    display: grid;
+    justify-content: center;
+
+    /*    Skal måske fjernes, men bruges til styling */
+    border-radius: 25px;
+    border: 2px solid black;
+
+    margin: 25px auto;
+}
+
+#container {
+    padding: 50px;
 }
 
 #popup {
@@ -49,7 +72,53 @@ img {
     flex-direction: column;
 }
 
-/* Test class, skal ændres */
+
+
+
+/* Knap styling*/
+/* Class til filterknap, der er klikket på */
+.filter {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 4rem;
+
+    padding: 10px;
+
+    /*    Fjerne knapstyling, så det ikke længere ligner en knap */
+    border: 0;
+    background-color: inherit;
+
+
+}
+
 .buttonClicked {
-    color: red;
+    /*    text-decoration: underline;*/
+    /*    font-weight: 600;*/
+}
+
+
+
+/* Font styling */
+h1 {}
+
+h2 {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 5rem;
+    text-transform: uppercase;
+    text-align: center;
+
+    /*    Måske skal margin flyttes */
+    padding: 4vw 0;
+}
+
+h3 {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
 }
