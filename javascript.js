@@ -59,29 +59,31 @@ function buttonEventListeners() {
 }
 
 function filterBTNs() {
-    console.log('clicked button ' + this.dataset.type);
+    console.log('clicked button' + this.dataset.type);
     filter = this.dataset.type;
     document.querySelectorAll(".filter").forEach(btn => btn.classList.remove("buttonClicked"));
 
-    if (filter == "alle") {
+    this.classList.add("buttonClicked");
 
-        document.querySelector(".filter:first-child").classList.add("buttonClicked");
-    } else if (filter == "desserter") {
-
-        document.querySelector(".filter:nth-child(2)").classList.add("buttonClicked");
-    } else if (filter == "drikkevarer") {
-
-        document.querySelector(".filter:nth-child(3)").classList.add("buttonClicked");
-    } else if (filter == "forretter") {
-
-        document.querySelector(".filter:nth-child(4)").classList.add("buttonClicked");
-    } else if (filter == "hovedretter") {
-
-        document.querySelector(".filter:nth-child(5)").classList.add("buttonClicked");
-    } else if (filter == "sideorders") {
-
-        document.querySelector(".filter:last-child").classList.add("buttonClicked");
-    }
+    //    if (filter == "alle") {
+    //
+    //        document.querySelector(".filter:first-child").classList.add("buttonClicked");
+    //    } else if (filter == "desserter") {
+    //
+    //        document.querySelector(".filter:nth-child(2)").classList.add("buttonClicked");
+    //    } else if (filter == "drikkevarer") {
+    //
+    //        document.querySelector(".filter:nth-child(3)").classList.add("buttonClicked");
+    //    } else if (filter == "forretter") {
+    //
+    //        document.querySelector(".filter:nth-child(4)").classList.add("buttonClicked");
+    //    } else if (filter == "hovedretter") {
+    //
+    //        document.querySelector(".filter:nth-child(5)").classList.add("buttonClicked");
+    //    } else if (filter == "sideorders") {
+    //
+    //        document.querySelector(".filter:last-child").classList.add("buttonClicked");
+    //    }
 
     hentData(link);
 }
