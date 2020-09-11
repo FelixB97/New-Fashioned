@@ -18,6 +18,7 @@ function vis(cocktails) {
     console.log(cocktails);
     container.innerHTML = "";
     let picNumber = 1;
+
     cocktails.feed.entry.forEach(cocktails => {
         if (filter == "alle" || filter == cocktails.gsx$kategori.$t) {
             console.log('ret filter');

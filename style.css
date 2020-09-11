@@ -1,6 +1,6 @@
 /*css til newfashioned*/
 html {
-/*    Nulstiller fontsize, så den er 10px */
+    /*    Nulstiller fontsize, så den er 10px */
     font-size: 62.5%;
 }
 
@@ -15,7 +15,7 @@ html {
 }
 
 img {
-/*    display: flex;*/
+    /*    display: flex;*/
     max-width: 100%;
     max-height: 300px;
     object-fit: contain;
@@ -47,4 +47,9 @@ img {
     border-radius: 0.1%;
     display: flex;
     flex-direction: column;
+}
+
+/* Test class, skal ændres */
+.buttonClicked {
+    color: red;
 }
