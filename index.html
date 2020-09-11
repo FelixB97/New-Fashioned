@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>New Fashioned Bar</title>
@@ -19,9 +20,10 @@
             <!--            </div>-->
 
             <nav>
-                <a href="#">Om Os</a>
-                <a href="#">Book Bord</a>
-                <a href="#">Menu Kort</a>
+                <a href="#omos">Om Os</a>
+                <a href="#menu">Menu Kort</a>
+                <a href="#bookbord">Book Bord</a>
+
             </nav>
             <section id="omos">
                 <div>
@@ -41,15 +43,9 @@
 
 
             </section>
+        </header>
 
-
-
-
-
-
-
-
-
+        <section>
             <h1>Menu:</h1>
             <div id="menu">
                 <button class="filter buttonClicked" data-type="alle">Alle</button>
@@ -59,46 +55,48 @@
                 <button class="filter" data-type="hovedretter">Vodka</button>
                 <button class="filter" data-type="sideorders">Andet</button>
             </div>
-        </header>
 
 
-        <section id="listSection"></section>
+
+            <section id="listSection"></section>
 
 
-        <template>
-            <article id="listContainer">
-                <div id="container">
-                    <img src="" alt="">
-                    <h2 class="navn"></h2>
-                    <p class="kort"></p>
-                    <p class="pris"></p>
-                </div>
-            </article>
-        </template>
+            <template>
+                <article id="listContainer">
+                    <div id="container">
+                        <img src="" alt="">
+                        <h2 class="navn"></h2>
+                        <p class="kort"></p>
+                        <p class="pris"></p>
+                    </div>
+                </article>
+            </template>
+
+
+            <section id="popup">
+                <article id="contentArea">
+                    <div id="luk">x</div>
+                    <h2>Cocktail</h2>
+                    <div id="retDetaljer">
+                        <img src="" alt="">
+                        <div id="detaljeTekst">
+                            <p>Spritus: <span class="kategori"></span></p>
+                            <p>Oprindelse: <span class="oprindelse"></span></p>
+                            <p>Beskrivelse: <span class="lang"></span></p>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </section>
+
+        <section id="bookbord">
+            <button>BOOK BORD!</button>
+        </section>
     </section>
-
-    <section id="popup">
-        <article id="contentArea">
-            <div id="luk">x</div>
-            <h2>Cocktail</h2>
-            <div id="retDetaljer">
-                <img src="" alt="">
-                <div id="detaljeTekst">
-                    <p>Spritus: <span class="kategori"></span></p>
-                    <p>Oprindelse: <span class="oprindelse"></span></p>
-                    <p>Beskrivelse: <span class="lang"></span></p>
-                </div>
-            </div>
-        </article>
-    </section>
-
-    <section id="bookbord">
-    <button>BOOK BORD!</button>
-    </section>
-
     <script src="javascript.js"></script>
     <footer>
         <div id="footer"></div>
     </footer>
-</body></html>
+</body>
 
+</html>
