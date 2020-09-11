@@ -5,7 +5,7 @@
 let cocktails;
 let filter = "alle";
 
-const link = "https://spreadsheets.google.com/feeds/list/1X12aLU9AzyTNRiG9xer9NofQufUxZiSPcwtLHEQndko/od6/public/values?alt=json";
+const link = "https://spreadsheets.google.com/feeds/list/1Eg-ALbGni5-LA8XdI-a-ihkYCiYoDk3TZGRjGxZAW0s/od6/public/values?alt=json";
 
 async function hentData(link) {
     const respons = await fetch(link);
@@ -24,10 +24,7 @@ function vis(cocktails) {
             const klon = temp.cloneNode(true).content;
             klon.querySelector(".navn").textContent = cocktails.gsx$navn.$t;
 
-            //            Ny billedereference til placeholder billede - skal ændres ved adgang til gsheets
-            klon.querySelector("img").src = `imgs/small/drink_${picNumber++}.jpg`;
-            //          Gammel billedereference
-            //            klon.querySelector("img").src = "imgs/small/" + cocktails.gsx$billede.$t + "-sm.jpg";
+            klon.querySelector("img").src = "imgs/small/" + cocktails.gsx$billede.$t + "_sm.jpg";
             klon.querySelector(".kort").textContent = cocktails.gsx$kort.$t;
             klon.querySelector(".pris").textContent = "pris: " + cocktails.gsx$pris.$t + " kr. ,-";
             klon.querySelector("#listContainer").addEventListener("click", () => visDetaljer(cocktails));
@@ -42,12 +39,8 @@ function visDetaljer(drink) {
     popup.style.display = "block";
     document.querySelector("#popup").addEventListener("click", tilbage);
     popup.querySelector(".kategori").textContent = drink.gsx$kategori.$t;
-    popup.querySelector(".oprindelse").textContent = drink.gsx$oprindelse.$t;
     popup.querySelector(".lang").textContent = drink.gsx$lang.$t;
-    //            Ny billedereference til placeholder billede - skal ændres ved adgang til gsheets
-    klon.querySelector("img").src = `imgs/small/drink_${picNumber}.jpg`;
-    //          Gammel billedereference
-    //    popup.querySelector("img").src = "imgs/large/" + drink.gsx$billede.$t + ".jpg";
+    popup.querySelector("img").src = "imgs/large/" + drink.gsx$billede.$t + "_lg.jpg";
 }
 
 function tilbage() {
