@@ -9,6 +9,14 @@ html {
     margin: 0;
 }
 
+:root {
+    --border-styling: 2px solid black;
+    --border-radius: 25px;
+    --sub-headline-color: black;
+    --p-color: black;
+    --menu-color: black;
+}
+
 .landing-page-width {
     max-width: 90vw;
     margin: 0 auto;
@@ -23,11 +31,153 @@ img {
 }
 
 
-#omos p {
-    padding: 0 0 50px 0;
+/* Font styling */
+h2 {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 5rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--sub-headline-color);
+
+    /*    Måske skal margin flyttes */
+    padding: 4vw 0;
+}
+
+h3 {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: var(--sub-headline-color);
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    color: var(--p-color);
 }
 
 
+/* Header, Splash, logo og overskrift, menu */
+header {
+    margin: 0 0 15vw 0;
+}
+
+#splash {
+    background-image: url(imgs/splash/splash_medium.jpg);
+    object-fit: cover;
+    /*    object-fit: contain;*/
+    width: 100vw;
+    height: 85vh;
+    max-height: 1280px;
+    /*    object-position: center;*/
+    background-position: 0% 0%;
+    /*    position: relative;*/
+}
+
+
+h1 {
+    font-size: 12vw;
+    text-align: center;
+}
+
+
+#headline-new {
+    font-family: 'Abril Fatface', cursive;
+}
+
+#headline-fashioned {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    display: block;
+
+
+    /*    padding: 30% 0 0 0;*/
+
+    /*
+    position: absolute;
+    bottom: -10px;
+    left: 30vw;
+*/
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 4rem;
+    text-decoration: none;
+    color: inherit;
+
+    padding: 25px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* Styling af om os sektion */
+#omos,
+#bookbord {
+    /*    Border-styling styres i root (øverst) */
+    border: var(--border-styling);
+    border-radius: var(--border-radius);
+
+    /*    border-radius: 25px;*/
+    /*    border: 2px solid black;*/
+
+    margin: 10vw auto;
+    padding: 50px;
+}
+
+#omos p {
+    padding: 0 0 50px 0;
+
+}
+
+
+
+
+/* Knap styling*/
+/* Class til filterknap, der er klikket på */
+#menu {
+    display: flex;
+    justify-content: center;
+}
+
+
+.filter {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 4rem;
+
+    padding: 25px;
+
+    /*    Fjerne knapstyling, så det ikke længere ligner en knap */
+    border: 0;
+    background-color: inherit;
+
+
+}
+
+.buttonClicked {
+    /*    text-decoration: underline;*/
+    /*    font-weight: 600;*/
+}
+
+
+
+
+
+
+
+
+/* Styling af drinksmenu */
 #listSection {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
@@ -41,8 +191,15 @@ img {
     justify-content: center;
 
     /*    Skal måske fjernes, men bruges til styling */
+    /*    Border-styling styres i root (øverst) */
+    /*
+    border: var(--border-styling);
+    border-radius: var(--border-radius);
+*/
+    /*
     border-radius: 25px;
     border: 2px solid black;
+*/
 
     margin: 25px auto;
 }
@@ -51,6 +208,12 @@ img {
     padding: 50px;
 }
 
+
+
+
+
+
+/* Styling af popup-vindue */
 #popup {
     width: 100vw;
     height: 100vh;
@@ -70,55 +233,4 @@ img {
     border-radius: 0.1%;
     display: flex;
     flex-direction: column;
-}
-
-
-
-
-/* Knap styling*/
-/* Class til filterknap, der er klikket på */
-.filter {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 400;
-    font-size: 4rem;
-
-    padding: 10px;
-
-    /*    Fjerne knapstyling, så det ikke længere ligner en knap */
-    border: 0;
-    background-color: inherit;
-
-
-}
-
-.buttonClicked {
-    /*    text-decoration: underline;*/
-    /*    font-weight: 600;*/
-}
-
-
-
-/* Font styling */
-h1 {}
-
-h2 {
-    font-family: 'Abril Fatface', cursive;
-    font-size: 5rem;
-    text-transform: uppercase;
-    text-align: center;
-
-    /*    Måske skal margin flyttes */
-    padding: 4vw 0;
-}
-
-h3 {
-    font-family: 'Abril Fatface', cursive;
-    font-size: 3rem;
-    text-transform: uppercase;
-}
-
-p {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 400;
-    font-size: 2rem;
 }
