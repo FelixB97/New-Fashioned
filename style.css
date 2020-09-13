@@ -9,6 +9,11 @@ html {
     margin: 0;
 }
 
+:root {
+    --border-styling: 2px solid black;
+    --border-radius: 25px;
+}
+
 .landing-page-width {
     max-width: 90vw;
     margin: 0 auto;
@@ -98,11 +103,11 @@ nav {
 nav a {
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
-    font-size: 2rem;
+    font-size: 4rem;
     text-decoration: none;
     color: inherit;
 
-    padding: 10px;
+    padding: 25px;
 }
 
 nav a:hover {
@@ -111,6 +116,19 @@ nav a:hover {
 
 
 /* Styling af om os sektion */
+#omos,
+#bookbord {
+/*    Border-styling styres i root (øverst) */
+    border: var(--border-styling);
+    border-radius: var(--border-radius);
+
+    /*    border-radius: 25px;*/
+    /*    border: 2px solid black;*/
+
+    margin: 10vw auto;
+    padding: 50px;
+}
+
 #omos p {
     padding: 0 0 50px 0;
 
@@ -121,12 +139,18 @@ nav a:hover {
 
 /* Knap styling*/
 /* Class til filterknap, der er klikket på */
+#menu {
+    display: flex;
+    justify-content: center;
+}
+
+
 .filter {
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
     font-size: 4rem;
 
-    padding: 10px;
+    padding: 25px;
 
     /*    Fjerne knapstyling, så det ikke længere ligner en knap */
     border: 0;
@@ -161,8 +185,15 @@ nav a:hover {
     justify-content: center;
 
     /*    Skal måske fjernes, men bruges til styling */
+    /*    Border-styling styres i root (øverst) */
+/*
+    border: var(--border-styling);
+    border-radius: var(--border-radius);
+*/
+/*
     border-radius: 25px;
     border: 2px solid black;
+*/
 
     margin: 25px auto;
 }
