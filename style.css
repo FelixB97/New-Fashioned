@@ -23,53 +23,97 @@ img {
 }
 
 
+/* Font styling */
+h2 {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 5rem;
+    text-transform: uppercase;
+    text-align: center;
+
+    /*    Måske skal margin flyttes */
+    padding: 4vw 0;
+}
+
+h3 {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+
+/* Header, Splash, logo og overskrift, menu */
+header {
+    margin: 0 0 15vw 0;
+}
+
+#splash {
+    background-image: url(imgs/splash/splash_medium.jpg);
+    object-fit: cover;
+    /*    object-fit: contain;*/
+    width: 100vw;
+    height: 85vh;
+    max-height: 1280px;
+    /*    object-position: center;*/
+    background-position: 0% 0%;
+    /*    position: relative;*/
+}
+
+
+h1 {
+    font-size: 12vw;
+    text-align: center;
+}
+
+
+#headline-new {
+    font-family: 'Abril Fatface', cursive;
+}
+
+#headline-fashioned {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    display: block;
+
+
+    /*    padding: 30% 0 0 0;*/
+
+    /*
+    position: absolute;
+    bottom: -10px;
+    left: 30vw;
+*/
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    text-decoration: none;
+    color: inherit;
+
+    padding: 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* Styling af om os sektion */
 #omos p {
     padding: 0 0 50px 0;
-}
 
-
-#listSection {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
-    align-items: center;
-    max-width: 1700px;
-    grid-gap: 20px;
-}
-
-#listContainer {
-    display: grid;
-    justify-content: center;
-
-    /*    Skal måske fjernes, men bruges til styling */
-    border-radius: 25px;
-    border: 2px solid black;
-
-    margin: 25px auto;
-}
-
-#container {
-    padding: 50px;
-}
-
-#popup {
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, .8);
-    top: 0;
-    position: fixed;
-    display: none;
-}
-
-#contentArea {
-    background-color: white;
-    width: 75vw;
-    max-height: 75vh;
-    position: fixed;
-    top: 12.5vh;
-    left: 12.5vw;
-    border-radius: 0.1%;
-    display: flex;
-    flex-direction: column;
 }
 
 
@@ -98,27 +142,58 @@ img {
 
 
 
-/* Font styling */
-h1 {}
 
-h2 {
-    font-family: 'Abril Fatface', cursive;
-    font-size: 5rem;
-    text-transform: uppercase;
-    text-align: center;
 
-    /*    Måske skal margin flyttes */
-    padding: 4vw 0;
+
+
+
+/* Styling af drinksmenu */
+#listSection {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+    align-items: center;
+    max-width: 1700px;
+    grid-gap: 20px;
 }
 
-h3 {
-    font-family: 'Abril Fatface', cursive;
-    font-size: 3rem;
-    text-transform: uppercase;
+#listContainer {
+    display: grid;
+    justify-content: center;
+
+    /*    Skal måske fjernes, men bruges til styling */
+    border-radius: 25px;
+    border: 2px solid black;
+
+    margin: 25px auto;
 }
 
-p {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 400;
-    font-size: 2rem;
+#container {
+    padding: 50px;
+}
+
+
+
+
+
+
+/* Styling af popup-vindue */
+#popup {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .8);
+    top: 0;
+    position: fixed;
+    display: none;
+}
+
+#contentArea {
+    background-color: white;
+    width: 75vw;
+    max-height: 75vh;
+    position: fixed;
+    top: 12.5vh;
+    left: 12.5vw;
+    border-radius: 0.1%;
+    display: flex;
+    flex-direction: column;
 }
