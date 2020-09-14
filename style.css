@@ -213,30 +213,59 @@ nav a:hover {
 
 
 
-
-
-
 /* Styling af popup-vindue */
 #popup {
+    position: fixed;
+    left: 0;
+    top: 0;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(0, 0, 0, .8);
-    top: 0;
-    position: fixed;
+    background-color: black;
     display: none;
 }
 
-#contentArea {
-    background-color: white;
-    width: 75vw;
-    max-height: 75vh;
-    position: fixed;
-    top: 12.5vh;
-    left: 12.5vw;
-    border-radius: 0.1%;
-    display: flex;
-    flex-direction: column;
+
+#popup article {
+    width: 80vw;
+    height: 80vh;
+
+    margin: 0;
+    background: yellow;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
 }
+
+#popup article img {
+    max-width: 40%;
+    margin-left: 12rem;
+    object-fit: cover;
+}
+
+#detaljeTekst {
+    padding-top: 5%;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+
+#luk {
+    position: fixed;
+    right: 0.2rem;
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+}
+
+
+
+
+
+
+
+
 
 
 /* Footer styling */
@@ -262,4 +291,40 @@ footer {
     font-size: 3rem;
     text-transform: uppercase;
     color: var(--sub-headline-color);
+}
+
+/*media for ipad og disse størrelser*/
+@media screen and (min-width: 992px) {
+
+
+    #flex {
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    #popup article img {
+        max-width: 50%;
+        justify-content: center;
+        object-fit: cover;
+
+    }
+
+    #detaljeTekst {
+        padding-top: 5%;
+        flex-grow: 2;
+        justify-content: center
+    }
+
+    #luk {
+        position: fixed;
+        right: 5.2rem;
+        top: 5.2rem;
+        background-color: white;
+        color: black;
+        padding: 10px 20px;
+    }
+
+
+
 }
