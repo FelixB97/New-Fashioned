@@ -159,13 +159,14 @@ nav a:hover {
 #menu {
     display: flex;
     justify-content: center;
+    margin: auto;
 }
 
 
 .filter {
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
-    font-size: 4rem;
+    font-size: 2.5rem;
 
     padding: 25px;
 
