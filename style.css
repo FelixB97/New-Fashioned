@@ -326,12 +326,14 @@ footer {
     width: 100vw;
     padding: 40px 0;
     background-color: var(--background-color-header-footer);
+
 }
 
 .footer-wrapper {
     margin: 0 auto;
     max-width: 70vw;
     padding: 0 40px;
+
 }
 
 .footer-headline {
@@ -386,7 +388,7 @@ footer {
 
 /* tablets*/
 
-@media (min-width: 70px) {
+@media (min-width: 700px) {
 
 
 
