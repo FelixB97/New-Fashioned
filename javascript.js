@@ -42,6 +42,7 @@ function visDetaljer(drink) {
     document.querySelector("#popup").addEventListener("click", tilbage);
     popup.querySelector(".kategori").textContent = drink.gsx$kategori.$t;
     popup.querySelector(".lang").textContent = drink.gsx$lang.$t;
+
     popup.querySelector("img").src = "imgs/large/" + drink.gsx$billede.$t + "_lg.jpg";
     popup.querySelector("img").alt = drink.gsx$navn.$t;
 }
