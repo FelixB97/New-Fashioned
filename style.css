@@ -324,12 +324,12 @@ nav a:hover {
 
 #container h3 {
     font-size: 3rem;
-    text-align: center;
+    text-align: flex-start;
 }
 
 #container p {
     font-size: 1.5rem;
-    text-align: center;
+    text-align: flex-start;
 }
 
 /* Styling af popup-vindue */
