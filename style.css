@@ -481,9 +481,6 @@ input[type=submit]:hover {
 
 
 
-
-
-
 /* Footer styling */
 footer {
     width: 100%;
@@ -491,13 +488,14 @@ footer {
     background-color: #e8e8e8;
 }
 
+/* Footer selve containeren */
 .footer-wrapper {
     margin: 0 auto;
     max-width: 70vw;
     padding: 0 40px;
-
 }
 
+/* stylign af overskriften*/
 .footer-headline {
     padding: 0 0 10px 0;
     font-family: 'Abril Fatface', cursive;
@@ -507,36 +505,7 @@ footer {
 }
 
 
-/*media for ipad og disse størrelser*/
-@media (min-width: 992px) {
-    #flex {
-        display: flex;
-        flex-direction: row;
-    }
-
-    #flex img {
-        max-width: 50%;
-        justify-content: center;
-        object-fit: fill;
-        flex-grow: 1;
-
-    }
-
-    #detaljeTekst {
-        padding-top: 5%;
-        justify-content: center;
-        margin-right: 10%;
-    }
-
-    #luk {
-        position: fixed;
-        right: 5.2rem;
-        top: 5.2rem;
-        padding: 10px 20px;
-    }
-
-
-}
+/*media for tablets  og disse størrelser*/
 
 
 
@@ -566,11 +535,20 @@ footer {
     }
 
 
+
+    /* ændringerne for pop up i tablet view*/
     #popup article {
         width: 75vw;
         height: 75vh;
     }
 
+    /* tilføjer en flex */
+    #flex {
+        display: flex;
+        flex-direction: row;
+    }
+
+    /* styling af billedet */
     #flex img {
         max-height: 40vh;
         max-width: 50%;
@@ -578,15 +556,24 @@ footer {
         object-fit: cover;
         margin-right: 5%;
         margin-bottom: 5px;
-
     }
 
+    /* styling af teksten */
     #detaljeTekst {
         padding-top: 5%;
         justify-content: center;
 
-        margin-left: 10%;
+        margin-left: 3%;
     }
+
+    /* styling af lukke knap*/
+    #luk {
+        position: fixed;
+        right: 5.2rem;
+        top: 5.2rem;
+        padding: 10px 20px;
+    }
+
 
 
 
@@ -595,6 +582,11 @@ footer {
         grid-gap: 20px;
     }
 
+
+
+    /** styling af footer i tablets*/
+
+    /* tilføjer en flex på wapperen */
     .footer-wrapper {
         display: flex;
         flex-direction: row;
@@ -610,6 +602,7 @@ footer {
         padding-left: 20px;
     }
 
+    /* tilføjer et nyt billede og erstatter det gamle */
     #splash {
         background-image: url("imgs/splash/splash-1200.jpg");
 
@@ -618,8 +611,11 @@ footer {
 }
 
 
+/* media query for desktop of op efter*/
 
 @media (min-width: 992px) {
+
+    /* tilføjet nut baggrundbilled*/
     #splash {
         background-image: url("imgs/splash/splash-1980.jpg");
 
@@ -630,21 +626,28 @@ footer {
         /*padding-left: 70%;*/
     }
 
+
+    /* styling af bookbord formular for desktop */
+
+    /* tilføjer en flex for at indholdet står i row*/
     #bookbord_flex {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
     }
 
+    /* stylingen af selve formularen */
     .formular_width {
         flex-basis: 400px;
         margin-top: 0;
     }
 
+    /* styling af teksten som er ude for formularen  */
     .text_width {
         max-width: 500px;
     }
 
+    /* stylign af billedet som kun kommer frem i desktop view*/
     .bookbord_billede {
         background-image: url("imgs/people/book2.jpg");
         /*        width: 400px;*/
