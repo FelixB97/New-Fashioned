@@ -110,7 +110,8 @@ nav {
     position: fixed;
     top: 0;
     right: 0;
-    white-space: nowrap; /*stopper menu fra at have linebreaks*/
+    white-space: nowrap;
+    /*stopper menu fra at have linebreaks*/
     padding-right: 20px;
 }
 
@@ -320,154 +321,213 @@ nav a:hover {
 
 
 
-/* Footer styling */
-footer {
-    width: 100vw;
-    padding: 40px 0;
-    background-color: var(--background-color-header-footer);
-
-}
-
-.footer-wrapper {
-    margin: 0 auto;
-    max-width: 70vw;
-    padding: 0 40px;
-
-}
-
-.footer-headline {
-    padding: 0 0 10px 0;
-    font-family: 'Abril Fatface', cursive;
-    font-size: 3rem;
-    text-transform: uppercase;
-    color: var(--sub-headline-color);
-}
-
-/*media for ipad og disse størrelser*/
-@media screen and (min-width: 992px) {
-    nav {
-
-        /*padding-left: 60%;*/
-
-
-    }
-
-
-    #flex {
-        display: flex;
-        flex-direction: row;
-    }
-
-    #flex img {
-        max-width: 50%;
-        justify-content: center;
-        object-fit: fill;
-        flex-grow: 1;
-
-    }
-
-    #detaljeTekst {
-        padding-top: 5%;
-        justify-content: center;
-        margin-right: 10%;
-    }
-
-    #luk {
-        position: fixed;
-        right: 5.2rem;
-        top: 5.2rem;
-        background-color: white;
-        color: black;
-        padding: 10px 20px;
-    }
-
-
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
 }
 
 
-/* tablets*/
 
-@media (min-width: 700px) {
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
 
+input[type=submit]:hover {
+    background-color: #45a049;
+}
 
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
 
-    nav {
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
 
-       /* padding-left: 50%;*/
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+
+    .col-25,
+    .col-75,
+    input[type=submit] {
+        width: 100%;
+        margin-top: 0;
     }
 
 
 
-    nav a {
+    /* Footer styling */
+    footer {
+        width: 100vw;
+        padding: 40px 0;
+        background-color: var(--background-color-header-footer);
 
-        list-style-type: none font-weight: 400;
-        font-size: 2rem;
-
-
-    }
-
-
-    #popup article {
-        width: 75vw;
-        height: 75vh;
-    }
-
-    #flex img {
-        max-height: 40vh;
-        max-width: 50%;
-        justify-content: center;
-        object-fit: cover;
-        margin-right: 5%;
-        margin-bottom: 5px;
-
-    }
-
-    #detaljeTekst {
-        padding-top: 5%;
-        justify-content: center;
-
-        margin-left: 10%;
-    }
-
-
-
-    #listContainer {
-        height: 450px;
-        grid-gap: 20px;
     }
 
     .footer-wrapper {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
+        margin: 0 auto;
+        max-width: 70vw;
+        padding: 0 40px;
 
     }
 
-    #footer-adress {
-        padding-right: 20px;
+    .footer-headline {
+        padding: 0 0 10px 0;
+        font-family: 'Abril Fatface', cursive;
+        font-size: 3rem;
+        text-transform: uppercase;
+        color: var(--sub-headline-color);
     }
 
-    #footer-opening-hours {
-        padding-left: 20px;
+
+    /*media for ipad og disse størrelser*/
+    @media screen and (min-width: 992px) {
+        nav {
+
+            /*padding-left: 60%;*/
+
+
+        }
+
+
+        #flex {
+            display: flex;
+            flex-direction: row;
+        }
+
+        #flex img {
+            max-width: 50%;
+            justify-content: center;
+            object-fit: fill;
+            flex-grow: 1;
+
+        }
+
+        #detaljeTekst {
+            padding-top: 5%;
+            justify-content: center;
+            margin-right: 10%;
+        }
+
+        #luk {
+            position: fixed;
+            right: 5.2rem;
+            top: 5.2rem;
+            background-color: white;
+            color: black;
+            padding: 10px 20px;
+        }
+
+
     }
 
-    #splash {
-        background-image: url("imgs/splash/splash-1200.jpg");
+
+    /* tablets*/
+
+    @media (min-width: 700px) {
+
+
+
+        nav {
+
+            /* padding-left: 50%;*/
+        }
+
+
+
+        nav a {
+
+            list-style-type: none font-weight: 400;
+            font-size: 2rem;
+
+
+        }
+
+
+        #popup article {
+            width: 75vw;
+            height: 75vh;
+        }
+
+        #flex img {
+            max-height: 40vh;
+            max-width: 50%;
+            justify-content: center;
+            object-fit: cover;
+            margin-right: 5%;
+            margin-bottom: 5px;
+
+        }
+
+        #detaljeTekst {
+            padding-top: 5%;
+            justify-content: center;
+
+            margin-left: 10%;
+        }
+
+
+
+        #listContainer {
+            height: 450px;
+            grid-gap: 20px;
+        }
+
+        .footer-wrapper {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+        }
+
+        #footer-adress {
+            padding-right: 20px;
+        }
+
+        #footer-opening-hours {
+            padding-left: 20px;
+        }
+
+        #splash {
+            background-image: url("imgs/splash/splash-1200.jpg");
+
+        }
 
     }
 
-}
 
 
+    @media screen and (min-width: 992px) {
+        #splash {
+            background-image: url("imgs/splash/splash-1980.jpg");
 
-@media screen and (min-width: 992px) {
-    #splash {
-        background-image: url("imgs/splash/splash-1980.jpg");
+        }
 
+        nav {
+
+            /*padding-left: 70%;*/
+        }
     }
-
-    nav {
-
-        /*padding-left: 70%;*/
-    }
-}
