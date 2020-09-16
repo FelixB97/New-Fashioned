@@ -350,13 +350,15 @@ nav a:hover {
 #popup article {
     width: 80vw;
     height: 80vh;
+    min-height: 300px;
     margin: 0;
     background: white;
     position: absolute;
     top: 50%;
     left: 50%;
     margin-right: -50%;
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
+    border-radius: var(--border-radius);
 }
 
 #popup article img {
@@ -375,14 +377,22 @@ nav a:hover {
 #luk {
     position: fixed;
     right: 0.2rem;
-    background-color: white;
     color: black;
     padding: 10px 20px;
+
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    background-color: #c9c9c9;
+    border-radius: var(--border-radius);
+    border: 2px solid transparent;
+    text-transform: uppercase;
 }
 
 #luk:hover {
     cursor: pointer;
     background-color: #c9c9c9;
+    border: 2px solid black;
 }
 
 /*book bord sektion */
@@ -513,8 +523,6 @@ footer {
         position: fixed;
         right: 5.2rem;
         top: 5.2rem;
-        background-color: white;
-        color: black;
         padding: 10px 20px;
     }
 
@@ -526,7 +534,7 @@ footer {
 /* tablets*/
 
 @media (min-width: 700px) {
-nav {
+    nav {
         display: flex !important;
         /*!important da den ellers ikke ville overide display:none*/
         background: rgb(25, 24, 24);
