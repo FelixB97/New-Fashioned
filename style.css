@@ -92,7 +92,7 @@ header {
 }
 
 nav {
-    display: flex;
+    display: none;
     flex-direction: column;
     overflow: hidden;
     background: linear-gradient(180deg, rgba(25, 24, 24, 0.9) 17%, rgba(18, 14, 15, 0.9) 37%, rgba(25, 22, 23, 0.9) 65%, rgba(29, 26, 27, 0.9) 76%, rgba(13, 13, 13, 0.9) 88%, rgba(37, 35, 36, 0.9) 100%);
@@ -242,8 +242,8 @@ nav a:hover {
 }
 
 #omos div {
-    max-width: 65vw;
-    /*for at ungå billede klipping på lav opløsning*/
+   max-width: 68vw;
+
 }
 
 
