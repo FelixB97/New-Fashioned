@@ -24,7 +24,7 @@ function vis(cocktails) {
             const klon = temp.cloneNode(true).content;
             klon.querySelector(".navn").textContent = cocktails.gsx$navn.$t;
 
-            klon.querySelector("img").src = "imgs/xsmall/" + cocktails.gsx$billede.$t + "_sm.jpg";//path til vores billeder
+            klon.querySelector("img").src = "imgs/xsmall/" + cocktails.gsx$billede.$t + "_sm.jpg"; //path til vores billeder
             klon.querySelector("img").alt = cocktails.gsx$navn.$t;
             klon.querySelector(".kort").textContent = cocktails.gsx$kort.$t;
             klon.querySelector(".pris").textContent = "Pris: " + cocktails.gsx$pris.$t + " kr.";
@@ -63,7 +63,7 @@ function buttonEventListeners() {
 function filterBTNs() {
     console.log('clicked button' + this.dataset.type);
     filter = this.dataset.type;
-    document.querySelectorAll(".filter").forEach(btn => btn.classList.remove("buttonClicked"));//fjerner alle styles for ikke klikkede knapper
+    document.querySelectorAll(".filter").forEach(btn => btn.classList.remove("buttonClicked")); //fjerner alle styles for ikke klikkede knapper
     this.classList.add("buttonClicked");
     hentData(link);
 }
@@ -75,7 +75,7 @@ let container = document.querySelector("#listSection");
 let temp = document.querySelector("template"); //definere vores template og container til rigtige HTML elementer
 
 
-document.querySelector("#burgermenu").addEventListener("click", menuOpen);//tilføjer eventlistener til burgermenu
+document.querySelector("#burgermenu").addEventListener("click", menuOpen); //tilføjer eventlistener til burgermenu
 
 
 //BURGER MENU function der åbner menuen
