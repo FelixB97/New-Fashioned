@@ -442,6 +442,7 @@ input[type=submit] {
     background-color: #e8e8e8;
     border-radius: var(--border-radius);
     border: 2px solid transparent;
+    box-shadow: 2px 2px 4px #E0E0E0;
     cursor: pointer;
     width: 100%;
 
@@ -465,6 +466,7 @@ input[type=submit]:hover {
     border: var(--border-styling);
     border-radius: var(--border-radius);
     margin-top: 25px;
+    background-color: #F9F8F5;
 }
 
 /* Clear floats after the columns */
@@ -484,9 +486,8 @@ input[type=submit]:hover {
 /* Footer styling */
 footer {
     width: 100vw;
-    padding: 40px 0;
-    background-color: var(--background-color-header-footer);
-
+    padding: 100px 0;
+    background-color: #e8e8e8;
 }
 
 .footer-wrapper {
