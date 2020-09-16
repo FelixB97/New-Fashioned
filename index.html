@@ -7,15 +7,17 @@
     <title>New Fashioned Bar</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 
-    <!--    Fonte fra google fonts -->
+    <!-- Fonte fra google fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Raleway:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 
 <body>
 
+    <!-- Header der indeholder burgermenu (til mobil-view), main-menuen samt splashbilledet -->
     <header>
 
+        <!-- Burger-menu -->
         <div id="burgermenu">
             <input type="checkbox" />
             <span></span>
@@ -23,21 +25,25 @@
             <span></span>
         </div>
 
+        <!-- Main-menu -->
         <nav>
             <a href="#splash">Hjem</a>
             <a href="#omos">Om Os</a>
             <a href="#menu">Menu Kort</a>
             <a href="#bookbord">Book Bord</a>
-
-
         </nav>
-        <div id="splash">
 
-        </div>
+        <!-- Splash-billede -->
+        <div id="splash"></div>
+
     </header>
 
 
+
+    <!-- Sektion "landing-page-width" der har css der definerer hvor meget sidens indhold må fylde i bredden -->
     <section class="landing-page-width">
+
+        <!-- Sektion til at beskrive baren    -->
         <section id="omos">
             <div>
                 <h2>Om Os</h2>
@@ -53,14 +59,20 @@
                     Vi håber vi ses!</p>
 
             </div>
+
+            <!-- Billede til om-os sektionen -->
             <div id="omosbillede">
                 <img src="imgs/people/morten.jpg" alt="Morten og hans drinks">
             </div>
         </section>
 
 
+
+        <!-- Sektion der indeholder drinks-menuen, filteret og pop-up visningen af de enkelte drinks -->
         <section>
             <h2>Vores menu</h2>
+
+            <!-- Filtrene -->
             <div id="menu">
                 <button class="filter buttonClicked" data-type="alle">Alle drinks </button>
 
@@ -70,10 +82,11 @@
             </div>
 
 
-
+            <!-- Her indsættes informationerne med JS, når de er blevet fyldt ud for hver enkelt drink -->
             <section id="listSection"></section>
 
 
+            <!-- Dette er skabelonen vi bruger for opstillingen af hver enkelt drink i vores menu -->
             <template>
                 <article id="listContainer">
                     <div id="container">
@@ -86,6 +99,7 @@
             </template>
 
 
+            <!-- Her indsættes informationerne for hver enkelt drink i et pop-up-view ved klik med JS -->
             <section id="popup">
                 <article>
                     <button id="luk">x</button>
@@ -106,10 +120,10 @@
 
 
 
-
-
-
+        <!-- Sektion hvor kunderne kan kontakte baren for at booke bord -->
         <section id="bookbord">
+
+            <!-- Beskrivelse af hvordan man booker bord -->
             <h2>Book et bord</h2>
             <div id="bookbord_flex">
                 <div class="container text_width">
@@ -121,53 +135,57 @@
                         Vi glæder os til at se jer.</p>
                     <div class="bookbord_billede"> </div>
 
+
+                    <!-- Formular-html der giver kunden mulighed for at skrive deres kontaktinformationer, vælge dato og tidspunkt samt skrive en kommentar -->
                 </div>
                 <div class=" container formular_width">
 
+                    <!-- Her ville man indsætte det sted, som informationen skulle sendes hen. Vi har efterladt strengen tom, fordi vi kun har behov for en "dummy" formular -->
                     <form action="">
+
+                        <!-- Her kan kunden skrive deres fornavn -->
                         <div class="row">
 
                             <div class="col-75">
                                 <input type="text" id="fname" name="firstname" placeholder="Fornavn">
                             </div>
                         </div>
-                        <div class="row">
 
+                        <!-- Her kan kunden skrive deres efternavn -->
+                        <div class="row">
                             <div class="col-75">
                                 <input type="text" id="lname" name="lastname" placeholder="Efternavn">
                             </div>
                         </div>
+
+
+                        <!-- Her kan kunden vælge den ønskede tid -->
                         <div class="row">
                             <div class="col-75">
                                 <input type="datetime-local" id="birthdaytime" name="birthdaytime">
-
                             </div>
                         </div>
 
+                        <!-- Her kan kunden skrive en kommentar til deres booking -->
                         <div class="row">
-
                             <div class="col-75">
                                 <textarea id="subject" name="subject" placeholder="Kommentar til din booking" style="height:200px"></textarea>
                             </div>
                         </div>
+
+                        <!-- Her er en knap, der ville sende bookingen til baren -->
                         <div class="row">
                             <input type="submit" value="Book Bord">
                         </div>
                     </form>
                 </div>
-
-
             </div>
-
         </section>
-
-
-
-
-
-
     </section>
 
+
+
+    <!-- Footer med adresse og åbningstider -->
     <footer>
         <div class="footer-wrapper">
             <div id="footer-adress">
