@@ -25,7 +25,7 @@ function vis(cocktails) {
             const klon = temp.cloneNode(true).content;
             klon.querySelector(".navn").textContent = cocktails.gsx$navn.$t;
 
-            klon.querySelector("img").src = "imgs/small/" + cocktails.gsx$billede.$t + "_sm.jpg";
+            klon.querySelector("img").src = "imgs/xsmall/" + cocktails.gsx$billede.$t + "_sm.jpg";
             klon.querySelector("img").alt = cocktails.gsx$navn.$t;
             klon.querySelector(".kort").textContent = cocktails.gsx$kort.$t;
             klon.querySelector(".pris").textContent = "pris: " + cocktails.gsx$pris.$t + " kr.";
@@ -43,7 +43,7 @@ function visDetaljer(drink) {
     popup.querySelector(".kategori").textContent = drink.gsx$kategori.$t;
     popup.querySelector(".lang").textContent = drink.gsx$lang.$t;
 
-    popup.querySelector("img").src = "imgs/large/" + drink.gsx$billede.$t + "_lg.jpg";
+    popup.querySelector("img").src = "imgs/small/" + drink.gsx$billede.$t + "_sm.jpg";
     popup.querySelector("img").alt = drink.gsx$navn.$t;
 }
 
@@ -117,21 +117,3 @@ function menuClose() {
     document.querySelector("#burgermenu").removeEventListener("click", menuClose);
     document.querySelector("#burgermenu").addEventListener("click", menuOpen);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
