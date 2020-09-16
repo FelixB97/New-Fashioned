@@ -110,7 +110,8 @@ nav {
     position: fixed;
     top: 0;
     right: 0;
-    white-space: nowrap; /*stopper menu fra at have linebreaks*/
+    white-space: nowrap;
+    /*stopper menu fra at have linebreaks*/
     padding-right: 20px;
 }
 
@@ -318,6 +319,83 @@ nav a:hover {
     background-color: #c9c9c9;
 }
 
+/*book bord sektion */
+
+
+
+
+input[type=text],
+input[type=datetime-local],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: var(--border-styling);
+    border-radius: var(--border-radius);
+    resize: vertical;
+}
+
+.container ::placeholder,
+#birthdaytime,
+#fname,
+#lname,
+#subject {
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+input[type=submit] {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 2.5rem;
+    padding: 25px 0px;
+
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border: 0;
+    background-color: #e8e8e8;
+    border-radius: var(--border-radius);
+    border: 2px solid transparent;
+    cursor: pointer;
+    width: 100%;
+
+}
+
+
+input[type=submit]:hover {
+    border: 2px solid;
+    border-color: black;
+    cursor: pointer;
+}
+
+
+.container {}
+
+
+.col-75 {}
+
+.formular_width {
+    padding: 20px;
+    border: var(--border-styling);
+    border-radius: var(--border-radius);
+    margin-top: 25px;
+}
+
+/* Clear floats after the columns */
+
+
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
 
 
 /* Footer styling */
@@ -342,6 +420,7 @@ footer {
     text-transform: uppercase;
     color: var(--sub-headline-color);
 }
+
 
 /*media for ipad og disse størrelser*/
 @media screen and (min-width: 992px) {
@@ -385,6 +464,7 @@ footer {
 }
 
 
+
 /* tablets*/
 
 @media (min-width: 700px) {
@@ -393,7 +473,7 @@ footer {
 
     nav {
 
-       /* padding-left: 50%;*/
+        /* padding-left: 50%;*/
     }
 
 
@@ -469,5 +549,33 @@ footer {
     nav {
 
         /*padding-left: 70%;*/
+    }
+
+    #bookbord_flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .formular_width {
+        flex-basis: 400px;
+        margin-top: 0;
+    }
+
+    .text_width {
+        max-width: 500px;
+    }
+
+    .bookbord_billede {
+        background-image: url("imgs/people/book2.jpg");
+
+        /*        width: 400px;*/
+        height: 300px;
+        object-fit: cover;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        margin-top: 40px;
+        border-radius: var(--border-radius);
+
     }
 }
