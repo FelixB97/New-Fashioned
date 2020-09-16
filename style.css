@@ -592,8 +592,6 @@ footer {
         grid-gap: 20px;
     }
 
-
-
     /** styling af footer i tablets*/
 
     /* tilføjer en flex på wapperen */
@@ -650,6 +648,7 @@ footer {
     .formular_width {
         flex-basis: 400px;
         margin-top: 0;
+        margin-left: 50px;
     }
 
     /* styling af teksten som er ude for formularen  */
