@@ -11,12 +11,18 @@ html {
 
 :root {
     --background-color-header-footer: #fff8f2;
-    --border-styling: 2px solid black;
+    --border-styling: 2px solid #707070;
     --border-radius: 25px;
     --sub-headline-color: black;
     --p-color: black;
     --menu-color: black;
 }
+
+
+body {
+    background-color: #F9F8F5;
+}
+
 
 .landing-page-width {
     max-width: 90vw;
@@ -216,6 +222,8 @@ nav a:hover {
     border: var(--border-styling);
     border-radius: var(--border-radius);
 
+    background-color: white;
+    box-shadow: 2px 2px 4px #E0E0E0;
     /*    border-radius: 25px;*/
     /*    border: 2px solid black;*/
 
@@ -257,8 +265,7 @@ nav a:hover {
 }
 
 .filter:hover {
-    border: 2px solid;
-    border-color: black;
+    border: 2px solid #707070;
     cursor: pointer;
 }
 
@@ -313,12 +320,12 @@ nav a:hover {
     height: 200px;
     overflow: hidden;
     object-fit: cover;
-    border: 2px solid transparent;
+    border: 3px solid transparent;
 }
 
 #container img:hover {
     cursor: pointer;
-    border: 3px solid;
+    border: 3px solid #707070;
 
 }
 
@@ -443,7 +450,7 @@ input[type=submit] {
 
 input[type=submit]:hover {
     border: 2px solid;
-    border-color: black;
+    border-color: #707070;
     cursor: pointer;
 }
 
