@@ -97,3 +97,41 @@ hentData(link);
 
 let container = document.querySelector("#listSection");
 let temp = document.querySelector("template");
+
+
+//BURGER MENU function:
+document.querySelector("#burgermenu").addEventListener("click", menuOpen);
+
+
+
+function menuOpen() {
+    console.log("menuOpen");
+    document.querySelector("nav").style.display = "flex";
+    document.querySelector("#burgermenu").removeEventListener("click", menuOpen);
+    document.querySelector("#burgermenu").addEventListener("click", menuClose);
+}
+
+function menuClose() {
+    console.log("menuClose");
+    document.querySelector("nav").style.display = "none";
+    document.querySelector("#burgermenu").removeEventListener("click", menuClose);
+    document.querySelector("#burgermenu").addEventListener("click", menuOpen);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
