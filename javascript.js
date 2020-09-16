@@ -28,7 +28,7 @@ function vis(cocktails) {
             klon.querySelector("img").src = "imgs/xsmall/" + cocktails.gsx$billede.$t + "_sm.jpg";
             klon.querySelector("img").alt = cocktails.gsx$navn.$t;
             klon.querySelector(".kort").textContent = cocktails.gsx$kort.$t;
-            klon.querySelector(".pris").textContent = "pris: " + cocktails.gsx$pris.$t + " kr.";
+            klon.querySelector(".pris").textContent = "Pris: " + cocktails.gsx$pris.$t + " kr.";
             klon.querySelector("#listContainer img").addEventListener("click", () => visDetaljer(cocktails));
             container.appendChild(klon);
         }

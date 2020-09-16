@@ -1,14 +1,16 @@
 /*css til newfashioned*/
 html {
-    /*    Nulstiller fontsize, så den er 10px */
+    /*    Nulstiller fontsize, så den er 10px. Dermed kan vi bruge rem til lettere at definere fontstørrelse */
     font-size: 62.5%;
 }
 
 * {
+    /*    Vi nulstiller de automatiske ekstra indstillinger der er for bl.a. padding, så vi selv kan definere dem */
     box-sizing: border-box;
     margin: 0;
 }
 
+/* Her tester vi brugen af variabler til at definere farver igennem vores css. Vi har sidenhen fundet ud af, at det i vores gruppedynamik fungerer bedre ikke at bruge dem, hvorfor vi kun bruger dem nogle steder */
 :root {
     --background-color-header-footer: #fff8f2;
     --border-styling: 2px solid #707070;
@@ -19,11 +21,12 @@ html {
 }
 
 
+/* Vi sætter en baggrundsfarve på body, så hele baggrunden får den farve. Det betyder også at den farve kommer op når man forsøger at scrolle "for langt", hvilket føles konsekvent og lækkert for brugere */
 body {
     background-color: #F9F8F5;
 }
 
-
+/* Her definerer vi max-bredden af sidens hovedindhold */
 .landing-page-width {
     max-width: 90vw;
     margin: 0 auto 15vw auto;
@@ -35,6 +38,8 @@ img {
     object-fit: contain;
     border-radius: 25px;
 }
+
+
 
 
 /* Font styling */
@@ -70,13 +75,14 @@ p {
 }
 
 
-/* Header, Splash, logo og overskrift, menu */
+
+
+
+/* Header, Splash, main-menu og burger-menu */
 header {
     width: 100%;
 
 }
-
-
 
 #splash {
 
@@ -87,7 +93,6 @@ header {
     background-position: 50% 50%;
     max-width: none;
 }
-
 
 nav {
     display: flex;
@@ -108,8 +113,6 @@ nav {
     display: none;
 
 }
-
-
 
 nav a {
     font-family: 'Raleway', sans-serif;
@@ -142,7 +145,7 @@ nav a:hover {
     cursor: pointer;
 }
 
-/* taget fra: https://codepen.io/erikterwan/pen/EVzeRP
+/* Koden i #burgermenu:hover er taget fra: https://codepen.io/erikterwan/pen/EVzeRP
 * sat på #burgermenu for at skabe animation
 */
 
@@ -184,7 +187,6 @@ nav a:hover {
     transform-origin: 50% 50%;
 }
 
-
 #burgermenu input:checked ~ span {
     opacity: 1;
     transform: rotate(45deg) translate(-14px, -22px);
@@ -192,21 +194,22 @@ nav a:hover {
     background: #cdcdcd;
 }
 
-
 #burgermenu input:checked ~ span:nth-last-child(3) {
     opacity: 0;
     /* hides one of span so it makes an X shape*/
     transform: rotate(0deg) scale(0.2, 0.2);
 }
 
-
 #burgermenu input:checked ~ span:nth-last-child(2) {
     transform: rotate(-45deg) translate(0, -1px);
     /* makes other part of X*/
 }
 
-/* Styling af om os sektion */
 
+
+
+
+/* Styling af om os sektion, samt lidt til book-bord, da vi ønsker et ensartet udtryk på de to sektioner */
 /*grid til om os section fungerer kun optimalt på bredder mindre end 2600ish pixel*/
 #omos {
     display: grid;
@@ -241,8 +244,10 @@ nav a:hover {
 }
 
 
-/* Knap styling*/
-/* Class til filterknap, der er klikket på */
+
+
+
+/* Styling af drinksmenu-filtreringsknapper */
 #menu {
     display: flex;
     justify-content: center;
@@ -251,7 +256,6 @@ nav a:hover {
     margin-left: 15vw;
     margin-right: 15vw;
 }
-
 
 .filter {
     font-family: 'Raleway', sans-serif;
@@ -264,17 +268,16 @@ nav a:hover {
     border: 2px solid transparent;
 }
 
+/* Hover-effekt til filterknapper */
 .filter:hover {
     border: 2px solid #707070;
     cursor: pointer;
 }
 
+/* Baggrundsfarveændring når en knap er trykket på */
 .buttonClicked {
     background-color: #a39b9b;
 }
-
-
-
 
 
 
@@ -340,6 +343,9 @@ nav a:hover {
     margin-bottom: 5px;
 }
 
+
+
+
 /* Styling af popup-vindue */
 #popup {
     position: fixed;
@@ -352,7 +358,6 @@ nav a:hover {
     background: rgb(25, 24, 24);
     background: linear-gradient(180deg, rgba(25, 24, 24, 0.6124824929971988) 17%, rgba(18, 14, 15, 0.4640231092436975) 37%, rgba(25, 22, 23, 0.3295693277310925) 65%, rgba(29, 26, 27, 0.23573179271708689) 76%, rgba(13, 13, 13, 0.16010154061624648) 88%, rgba(37, 35, 36, 0.23433123249299714) 100%);
 }
-
 
 #popup article {
     width: 80vw;
@@ -380,7 +385,6 @@ nav a:hover {
     margin-right: 60px;
 }
 
-
 #luk {
     position: fixed;
     right: 0.2rem;
@@ -402,11 +406,11 @@ nav a:hover {
     border: 2px solid black;
 }
 
-/*book bord sektion */
 
 
+/* Book bord sektion, styling af bookingformular */
 
-
+/* Her styler vi de forskellige inputfelter så det får et ensartet udtryk i størrelse og border */
 input[type=text],
 input[type=datetime-local],
 select,
@@ -419,6 +423,7 @@ textarea {
     resize: vertical;
 }
 
+/* Her styler vi de forskellige inputfelter så det får et ensartet udtryk i skrifttype, skriftstørrelse, farve og fonttykkelse */
 .container ::placeholder,
 #birthdaytime,
 #fname,
@@ -430,12 +435,12 @@ textarea {
     font-size: 2rem;
 }
 
+/* Her styler vi book-bord-cta-knappen. Vi styler størrelse, teksten, padding og border */
 input[type=submit] {
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
     font-size: 2.5rem;
     padding: 25px 0px;
-
     margin-top: 20px;
     margin-bottom: 10px;
     border: 0;
@@ -445,22 +450,20 @@ input[type=submit] {
     box-shadow: 2px 2px 4px #E0E0E0;
     cursor: pointer;
     width: 100%;
-
 }
 
-
+/* Her styler vi book-bord-cta-knappen ved hover */
 input[type=submit]:hover {
     border: 2px solid;
     border-color: #707070;
     cursor: pointer;
 }
 
-
 .container {}
-
 
 .col-75 {}
 
+/* Her styler vi den omkring-liggende container til formularen, der gør, at kunden har et indtryk af, at alle inputfelterne hænger sammen */
 .formular_width {
     padding: 20px;
     border: var(--border-styling);
@@ -470,14 +473,12 @@ input[type=submit]:hover {
 }
 
 /* Clear floats after the columns */
-
-
-
 .row:after {
     content: "";
     display: table;
     clear: both;
 }
+
 
 
 
