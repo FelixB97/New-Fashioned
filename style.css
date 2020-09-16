@@ -539,7 +539,7 @@ nav {
 
     nav a {
         font-size: 2rem;
-        margin: 10px 0px 0px 10px;
+        margin: 10px 0px 10px 10px;
         list-style-type: none font-weight: 400;
     }
 
