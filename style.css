@@ -109,11 +109,9 @@ nav {
     background: linear-gradient(180deg, rgba(25, 24, 24, 0.6124824929971988) 17%, rgba(18, 14, 15, 0.4640231092436975) 37%, rgba(25, 22, 23, 0.3295693277310925) 65%, rgba(29, 26, 27, 0.23573179271708689) 76%, rgba(13, 13, 13, 0.16010154061624648) 88%, rgba(37, 35, 36, 0.23433123249299714) 100%);
     position: fixed;
     top: 0;
-    /* left:*/
-    width: 100%;
-    padding-left: 35%;
-
-
+    right: 0;
+    white-space: nowrap; /*stopper menu fra at have linebreaks*/
+    padding-right: 20px;
 }
 
 
@@ -349,7 +347,7 @@ footer {
 @media screen and (min-width: 992px) {
     nav {
 
-        padding-left: 60%;
+        /*padding-left: 60%;*/
 
 
     }
@@ -395,7 +393,7 @@ footer {
 
     nav {
 
-        padding-left: 50%;
+       /* padding-left: 50%;*/
     }
 
 
@@ -470,6 +468,6 @@ footer {
 
     nav {
 
-        padding-left: 70%;
+        /*padding-left: 70%;*/
     }
 }
