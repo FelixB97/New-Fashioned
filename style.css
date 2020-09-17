@@ -220,6 +220,7 @@ nav a:hover {
     grid-gap: 40px;
 
 }
+
 /* Styling af om os sektion, samt lidt til book-bord, da vi ønsker et ensartet udtryk på de to sektioner */
 #omos,
 #bookbord {
@@ -301,7 +302,8 @@ nav a:hover {
 #listContainer {
     display: grid;
     justify-content: center;
-    max-height: 350px; /*styrer størrelsen af listview container*/
+    max-height: 350px;
+    /*styrer størrelsen af listview container*/
     max-width: 300px;
     margin: 25px auto;
 }
@@ -384,7 +386,8 @@ nav a:hover {
     margin-right: 60px;
 }
 
-#luk { /*styling af luk knap*/
+#luk {
+    /*styling af luk knap*/
     position: fixed;
     right: 0.2rem;
     color: black;
@@ -606,10 +609,6 @@ footer {
 
     }
 
-    nav {
-
-        /*padding-left: 70%;*/
-    }
 
 
     /* styling af bookbord formular for desktop */
