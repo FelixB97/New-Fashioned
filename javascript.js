@@ -18,9 +18,9 @@ function start() {
     //function der kloner og tilføjer content fra JSON til #container article i vores template
     function vis(cocktails) {
         console.log(cocktails);
-        container.innerHTML = "";
+        container.innerHTML = "";//containeren tømmes for indhold, så nyt kan komme ind.
 
-        cocktails.feed.entry.forEach(cocktails => {
+        cocktails.feed.entry.forEach(cocktails => {//for each som går alle cocktails igennem og placerer dem i HTML container
             if (filter == "alle" || filter == cocktails.gsx$kategori.$t) {
                 console.log('ret filter');
                 const klon = temp.cloneNode(true).content;
