@@ -41,9 +41,7 @@ img {
 
 
 
-
 /* Font styling */
-
 
 
 h2 {
@@ -242,7 +240,7 @@ nav a:hover {
 }
 
 #omos div {
-   max-width: 68vw;
+    max-width: 68vw;
 
 }
 
@@ -484,12 +482,6 @@ input[type=submit]:hover {
     background-color: #F9F8F5;
 }
 
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
 
 
 
