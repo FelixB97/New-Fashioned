@@ -7,6 +7,7 @@ let filter = "alle"; //default filter
 
 const link = "https://spreadsheets.google.com/feeds/list/1Eg-ALbGni5-LA8XdI-a-ihkYCiYoDk3TZGRjGxZAW0s/od6/public/values?alt=json"; //json link
 
+//function der henter data fra JSON
 async function hentData(link) {
     const respons = await fetch(link);
     const json = await respons.json();
