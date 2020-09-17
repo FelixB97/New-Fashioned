@@ -111,7 +111,8 @@ nav {
 
 nav a {
     font-family: 'Raleway', sans-serif;
-    list-style-type: none font-weight: 400;
+    list-style-type: none;
+    font-weight: 400;
     font-size: 3rem;
     text-decoration: none;
     color: white;
@@ -331,12 +332,12 @@ nav a:hover {
 
 #container h3 {
     font-size: 3rem;
-    text-align: flex-start;
+
 }
 
 #container p {
     font-size: 1.5rem;
-    text-align: flex-start;
+
     margin-bottom: 5px;
 }
 
@@ -519,7 +520,8 @@ footer {
     nav a {
         font-size: 2rem;
         margin: 10px 0px 10px 10px;
-        list-style-type: none font-weight: 400;
+        list-style-type: none;
+        font-weight: 400;
     }
 
     #burgermenu {
