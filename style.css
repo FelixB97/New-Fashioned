@@ -10,7 +10,7 @@ html {
     margin: 0;
 }
 
-/* Her tester vi brugen af variabler til at definere farver igennem vores css. Vi har sidenhen fundet ud af, at det i vores gruppedynamik fungerer bedre ikke at bruge dem, hvorfor vi kun bruger dem nogle steder */
+/* Her tester vi brugen af variabler til at definere farver igennem vores css. Vi har sidenhen fundet ud af, at det i vores gruppedynamik fungerer bedre ikke at bruge dem, hvorfor? vi kun bruger dem nogle steder. */
 :root {
     --background-color-header-footer: #fff8f2;
     --border-styling: 2px solid #707070;
@@ -209,8 +209,8 @@ nav a:hover {
 
 
 
-/* Styling af om os sektion, samt lidt til book-bord, da vi ønsker et ensartet udtryk på de to sektioner */
-/*grid til om os section fungerer kun optimalt på bredder mindre end 2600ish pixel*/
+
+/*grid til om os section*/
 #omos {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
@@ -220,7 +220,7 @@ nav a:hover {
     grid-gap: 40px;
 
 }
-
+/* Styling af om os sektion, samt lidt til book-bord, da vi ønsker et ensartet udtryk på de to sektioner */
 #omos,
 #bookbord {
     /*    Border-styling styres i root (øverst) */
@@ -276,7 +276,7 @@ nav a:hover {
     cursor: pointer;
 }
 
-/* Baggrundsfarveændring når en knap er trykket på */
+/* Baggrundsfarve ændring når en knap er trykket på */
 .buttonClicked {
     background-color: #a39b9b;
 }
@@ -301,20 +301,8 @@ nav a:hover {
 #listContainer {
     display: grid;
     justify-content: center;
-    max-height: 350px;
+    max-height: 350px; /*styrer størrelsen af listview container*/
     max-width: 300px;
-
-    /*    Skal måske fjernes, men bruges til styling */
-    /*    Border-styling styres i root (øverst) */
-    /*
-    border: var(--border-styling);
-    border-radius: var(--border-radius);
-*/
-    /*
-    border-radius: 25px;
-    border: 2px solid black;
-*/
-
     margin: 25px auto;
 }
 
@@ -396,7 +384,7 @@ nav a:hover {
     margin-right: 60px;
 }
 
-#luk {
+#luk { /*styling af luk knap*/
     position: fixed;
     right: 0.2rem;
     color: black;
@@ -469,9 +457,6 @@ input[type=submit]:hover {
     cursor: pointer;
 }
 
-.container {}
-
-.col-75 {}
 
 /* Her styler vi den omkring-liggende container til formularen, der gør, at kunden har et indtryk af, at alle inputfelterne hænger sammen */
 .formular_width {
@@ -509,11 +494,11 @@ footer {
 }
 
 
-/*media for tablets  og disse størrelser*/
+/*media for større størrelser*/
 
 
 
-/* tablets*/
+/*>700px*/
 
 @media (min-width: 700px) {
     nav {
@@ -611,7 +596,7 @@ footer {
 }
 
 
-/* media query for desktop of op efter*/
+/* media query for 992px og op efter imod desktop format*/
 
 @media (min-width: 992px) {
 
