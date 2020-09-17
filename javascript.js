@@ -13,6 +13,7 @@ function start() {
         const json = await respons.json();
         vis(json);
         buttonEventListeners();
+        loadMenu();
     }
 
     //function der kloner og tilføjer content fra JSON til #container article i vores template
@@ -77,9 +78,9 @@ function start() {
     let container = document.querySelector("#listSection");
     let temp = document.querySelector("template"); //definere vores template og container til rigtige HTML elementer
 
-
+    function loadMenu() {
     document.querySelector("#burgermenu").addEventListener("click", menuOpen); //tilføjer eventlistener til burgermenu
-
+    }
 
     //BURGER MENU function der åbner menuen
     function menuOpen() {
